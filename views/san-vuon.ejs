@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ gỗ mỹ nghệ</title>
+    <link rel="stylesheet" href="./styles/subpage.css">
+    
+    
+</head>
+<body>
+    <div class="header3">
+        <h1>Sân Vườn</h1>
+        <p>Từ Nghệ nhân - Họa sĩ - Thư họa Mộc Phong</p>
+      </div>
+      
+      <div class="navbar">
+        <a href="./">Trang Chủ</a>
+        <a href="./do-go-my-nghe">Đồ Gỗ Mỹ Nghệ</a>
+        <a href="./noi-that">Nội Thất</a>
+        <a href="/blog">Blog</a>
+        <a href="./lien-he" class="right">Liên Hệ</a>
+      </div>
+    <!-- Portfolio Gallery Grid -->
+    <div class="grid">
+      <% dulieu.forEach((item) => { %>
+        <div class="row">
+            
+            <div class="column">
+                
+              <div class="content nature">
+                
+                <img class="img" src= <%= item.link %> style="width:100%" alt= <%= item.alt %> >
+                <h4>Tên sản phẩm:<span> <%= item.name %> </span></h4>
+                <!-- <p>Chất liệu: <%= item.detail %></p>
+                <p>Giá:<span> <%=item.price %> </span></p> -->
+                
+              </div>
+              
+            </div>
+            
+        </div>
+        <% }) %>
+      </div>
+  <!-- END GRID -->
+
+
+   <!--div class="copyright">
+       <p>Designed by &copy; TiTi</p>
+   </div-->
+    <div class="footer" >
+        <h5 style="color: white !important">@ Mỹ nghệ H-A</h5>
+        <a><img class="social-icon" src="./photos/facebook.png" /></a>
+        <a><img class="social-icon" src="./photos/youtube.png" /></a>
+    </div>
+
+</body>
+</html>

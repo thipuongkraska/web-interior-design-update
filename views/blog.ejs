@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./styles/blog.css">
+    <link rel="stylesheet" href="../styles/blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    <div class="header-head">
+        <img class="logo" src="https://www.alingsashuspaket.se/wp-content/themes/ah/images/ah-logotyp.png?x63863" alt="">
+        <nav class="navbar">
+            <a href="../" id="home" class="navbar-content">TRANG CHỦ</a>
+            <a href="../do-go-my-nghe" class="navbar-content">ĐỒ GỖ MỸ NGHỆ</a>
+            <a href="../noi-that" class="navbar-content">NỘI NGOẠI THẤT</a>
+            <a href="../san-vuon" class="navbar-content">SÂN VƯỜN</a>
+        </nav>
+    </div>
+    <div class="header-bottom">
+        <h2 id="title">Mỹ Nghệ H-A</h2>
+        <h1 id="description">CHUYÊN ĐỒ GỖ MỸ NGHỆ - THIẾT KẾ NỘI THẤT - TRANH ĐÁ SÂN VƯỜN</h1>
+        <button id="btn">LIÊN HỆ</button>
+    </div>
+    </div>
+      
+      <div class="row">
+        <div class="leftcolumn content">
+            <% dulieu.forEach((item)=> { %>
+            <div class="card">
+                    <img class="img" style="height:200px" src= <%= item.imgLink %> alt= <%= item.alt %> >
+                <div clas="content">
+                    <h2> <%= item.article %> </h2>
+                    <h5> <%= item.date %> </h5>
+                    <p> <%= item.subContent %> </p>4
+                    <p>yăd sfcdnsx vdmxjfvmd xvdfjxn cvfdsxgvn dfxvjdfm gvfdcgjmvdf mc gcvfdc gvdfcikgnv dfgvndf gcvòidk ngvdfcngcv fccghvnf ncgvnfng vdfcgnv dfcghvn fv</p>
+                    <form action="/blog/<%= item.param %>" method="POST">
+                        <input type="submit" value="Xem thêm">
+                    </form>
+                </div>
+            </div>
+            <% }) %>
+          
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>VỀ CHÚNG TÔI</h2>
+            <div class="side-img" style="height:100px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Post mới nhất</h3>
+            <div class="side-img">Image</div><br>
+            <div class="side-img">Image</div><br>
+            <div class="side-img">Image</div>
+          </div>
+          <div class="card">
+            <h3>Liên hệ chúng tôi</h3>
+            <p>Some text..</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h5> @ Mỹ nghệ H-A</h5>
+        <p>Designed by &copy; TiTi</p>
+      </div>
+
+
+
+
+    
+</body>
+</html>

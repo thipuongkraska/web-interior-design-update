@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/gallerystyle.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="./effects/gallery.js" defer > </script>
+
+</head>
+<body>
+<div class="head">
+    <div class="heading">
+       
+        <img class="logo" src="https://www.alingsashuspaket.se/wp-content/themes/ah/images/ah-logotyp.png?x63863" alt="">
+
+        <nav class="navbar">
+            <a href="./" id="home" class="navbar-content">TRANG CHỦ</a>
+            <a href="./do-go-my-nghe" class="navbar-content">ĐỒ GỖ MỸ NGHỆ</a>
+            <a href="./noi-that" class="navbar-content">NỘI NGOẠI THẤT</a>
+            <a href="./san-vuon" class="navbar-content">SÂN VƯỜN</a>
+            <a href="./blog" class="navbar-content">BLOG</a>
+            <button id="btn" class="navbar-content"><bold>Gọi Tư Vấn</bold></button>
+        </nav>
+        <div class="topnav">
+            <div id="myLinks">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            <a href="javascript:void(0);" id="dropbar" onclick="myFunction()">
+            
+            <img id="dropbar-btn" src="./photos/dropbar.png">
+          </a>
+        </div>
+            <script> 
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+               
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+
+        <div class="introduction">
+            <hr/>
+            <p id="brandname">THƯ HỌA MỘC PHONG</p>
+            <h1 class="title">>  THỦ CÔNG MỸ NGHỆ</h1>
+            <h1 class="title">>  THIẾT KẾ NỘI NGOẠI THẤT</h1>
+            <h1 class="title">>  TRANG TRÍ SÂN VƯỜN</h1>
+            <!--button id="l-btn"><bold>LIÊN HỆ TƯ VẤN</bold></button-->
+        </div>   
+    </div>
+    
+    <div class="fullscreen-bg">
+        
+        <video loop muted autoplay class="fullscreen-bg_video">
+            <source src="./photos/videoplayback_Trim.mp4" type="video/mp4">
+        </video>
+        
+    </div>  
+</div>
+
+<div id="bodypart" style="background-image: url(https://www.alingsashuspaket.se/wp-content/uploads/2019/09/skog_barrskog.jpg)">
+        <h2>SẢN PHẨM</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Xem tất cả</button>
+  <button class="btn" onclick="filterSelection('nature')">Đồ gỗ</button>
+  <button class="btn" onclick="filterSelection('cars')">Nội thất</button>
+  <button class="btn" onclick="filterSelection('people')">Tiểu cảnh</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="./photos/mountains.jpg" alt="Mountains" style="width:100%">
+      <h4>Tên sản phẩm:.......</h4>
+      <p>Chất liệu:.......</p>
+      <p>Giá: Liên Hệ</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="./photos/lights.jpg" alt="Lights" style="width:100%">
+      <h4>Tên sản phẩm:.......</h4>
+      <p>Chất liệu:.......</p>
+      <p>Giá: Liên Hệ</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="./photos/nature.jpg" alt="Nature" style="width:100%">
+      <h4>Tên sản phẩm:.......</h4>
+      <p>Chất liệu:.......</p>
+      <p>Giá: Liên Hệ</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="./photos/cars1.jpg" alt="Car" style="width:100%">
+      <h4>Tên sản phẩm:.......</h4>
+      <p>Chất liệu:.......</p>
+      <p>Giá: Liên Hệ</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="./photos/cars2.jpg" alt="Car" style="width:100%">
+      <h4>Tên sản phẩm:.......</h4>
+      <p>Chất liệu:.......</p>
+      <p>Giá: Liên Hệ</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="./photos/cars3.jpg" alt="Car" style="width:100%">
+      <h4>Tên sản phẩm:.......</h4>
+      <p>Chất liệu:.......</p>
+      <p>Giá: Liên Hệ</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="./photos/people1.jpg" alt="People" style="width:100%">
+      <h4>Tên sản phẩm:.......</h4>
+      <p>Chất liệu:.......</p>
+      <p>Giá: Liên Hệ</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="./photos/people2.jpg" alt="People" style="width:100%">
+      <h4>Tên sản phẩm:.......</h4>
+      <p>Chất liệu:.......</p>
+      <p>Giá: Liên Hệ</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="./photos/people3.jpg" alt="People" style="width:100%">
+      <h4>Tên sản phẩm:.......</h4>
+      <p>Chất liệu:.......</p>
+      <p>Giá: Liên Hệ</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</div>
+
+<!--About us -->
+<div class="square"> 
+    <div>  
+        <img id="about-img" src=  
+    "./photos/people1.jpg"
+                alt="Longtail boat in Thailand">  
+    </div> 
+      
+    <div id="about-info"> 
+        <h2>Về chúng tôi</h2>
+        <p><span class="bold">Thủ công mỹ nghệ</span> là một nhánh của ngành thủ công nghiệp chế tạo các đồ vật như trang sức, đồ trang trí, lưu niệm... hoàn toàn bằng tay, không dùng máy móc. Cũng có thể hiểu thủ công mỹ nghệ là đồ thủ công (hand crafted). Những người làm đồ thủ công chuyên nghiệp và lành nghề được gọi là nghệ nhân thủ công.
+
+Thủ công mỹ nghệ có gốc rễ của nó trong <span class="bold">hàng thủ công</span>  từ nông thôn bao gồm các nhu yếu phẩm, vật liệu và hàng hóa của các nền văn minh cổ đại. Một số hàng thủ công đã tồn tại trong nhiều thế kỷ, trong khi một số khác lại là các phát minh hiện đại, là sự phát triển đại trà của hàng thủ công mà ban đầu được sản xuất chỉ trong một khu vực địa lý hạn chế.
+
+Nhiều nghệ nhân làm hàng thủ công mỹ nghệ sử dụng <span class="bold">vật liệu tự nhiên</span>, thậm chí hoàn toàn bản địa, trong khi những người khác có thể dùng vật liệu phi truyền thống hiện đại, và thậm chí tái sử dụng các vật liệu công nghiệp. Tay nghề thủ công cá nhân của một mặt hàng thủ công mỹ nghệ là tiêu chí tối quan trọng; những hàng hóa được sản xuất hàng loạt hay bằng máy không phải là hàng thủ công mỹ nghệ.</p>
+        <p style="text-decoration: underline;">Văn phòng : số 81 Phù Lưu - Tràng Minh - Kiến An - HP</p>
+        <p style="text-decoration: underline;">SĐT : 0913593165</p>
+    </div> 
+</div> 
+
+<div class="footer">
+    <div class="footer-1">
+        <p>Trụ sở chính: .........</p>
+        <p>Ngày làm việc: T2 - CN</p>
+    </div>
+    <div class="footer-2">
+        <a><img class="social-icon" src="./photos/facebook.png" /></a>
+        <a><img class="social-icon" src="./photos/youtube.png" /></a>
+    </div>
+</div>
+
+
+        
+</body>
+</html>

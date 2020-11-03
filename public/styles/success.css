@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+input {
+    background-color: grey;
+    border-radius: 3px;
+}

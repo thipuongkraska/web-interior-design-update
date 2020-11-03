@@ -1,0 +1,98 @@
+body {
+    /*background-image: url("https://www.alingsashuspaket.se/wp-content/uploads/2019/09/skog_barrskog.jpg");*/
+    background-color:  #000005;
+    text-align: center;
+    padding: 50px;
+    
+}
+.form {
+    display: none;
+    width: 50%;
+    text-align: left;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    margin-left: 20%;
+    padding: 50px;
+    background-color: white;
+    color: #065446;
+    -webkit-box-shadow: 0px 0px 15px 5px #053206; 
+    box-shadow: 0px 0px 15px 5px #053206;
+}
+.all-products {
+    display: none;
+}
+label {
+    font-size: large;
+}
+h1 {
+    font-size: 3rem;
+    text-align: left;
+    color: white;
+    width: 50%;
+    margin-left: 25%;
+    text-decoration: underline;
+    text-underline-position: under;
+    font-family: 'Commissioner', sans-serif;
+}
+hr {
+    border-style: solid;
+    padding: 1.5px;
+    width: 70%;
+    margin-left: 15%;
+    color: white;
+    background-color: white;
+}
+
+.btn {
+    width: 51.8%;
+    margin-left: 20%;
+    text-align: right;
+    padding: 25px 0px 25px 25px;
+}
+.btn button {
+    background-color: #00553D !important;
+    color:white !important;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10.5px;
+    text-align: center;
+    width: 150px;
+    font-family: 'Commissioner', sans-serif;
+    border-radius: 5px;
+}
+textarea {
+    width: 80%;
+}
+#hide {
+    display: none;
+}
+#show {
+    display: block;
+}
+.header {
+    text-align: right;
+}
+#logout {
+    padding: 0;
+    background-color: brown;
+    display: inline-block;
+}
+#home {
+    padding:0;
+    background-color: white;
+    display: inline-block;
+}
+.row {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    padding: 20px 10px 10px 10px;   
+  }
+  
+  #img {
+    width: 25vw;
+    height: 25vw;
+}
+.content {
+    color: white;
+}

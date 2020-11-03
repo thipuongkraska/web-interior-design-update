@@ -1,0 +1,277 @@
+html, body {
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    background-color: whitesmoke;
+}
+
+/*NAVBAR */
+.heading {
+    z-index: 5;
+    
+}
+/*#logo {
+    position: absolute;
+    padding-left: 57px;
+    height: 60px;
+}*/
+.logo {
+    position: absolute;
+    padding-left: 57px;
+    height: 13vw;
+    width: 18vw;
+    margin-top: 0px;
+    float: left;
+    z-index: 1000;
+}
+.navbar {
+    width: 55vw;
+    position:absolute;
+    display: flex;
+    right: 0px;
+    height: 60px;
+    z-index: 10000;
+    
+}
+#home {
+    font-weight: bold;
+    text-decoration: underline !important;
+    text-underline-position: under !important;
+}
+.navbar-content {
+    float: right;
+    color: white;
+    margin-top: 12px;
+    padding: 20px 30px 30px 20px;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: lighter;
+    border-radius: 5px;
+    font-size: 85%;
+}
+
+a {
+    text-decoration: none !important;
+}
+a:hover {
+    background-color: #388B64;
+}
+#dropbar {
+    display: block;
+    position: absolute;
+    margin: 0;
+    width: 5%;
+    z-index: 5000000;
+    margin: 10px 50px 10px 50px;
+    right: 0;
+    }
+.topbar {
+    background-color: #00553D;
+    z-index: 500000000;
+}
+#myLinks {
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+#myLinks a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+#btn {
+    background-color: #00553D !important;
+    color:white !important;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10.5px;
+    text-align: center;
+    width: 150px;
+    font-family: 'Commissioner', sans-serif;
+    border-radius: 5px;
+}
+#dropbar-btn {
+    width: 100%;
+}
+
+/*RESPONSIVE NAV*/
+
+  @media only screen and (min-width: 992px) {
+      #dropbar {
+          display:none !important;
+      }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+      .navbar {
+          display: none !important;
+      }
+      .title {
+        font-size: 2rem !important;
+    }
+    #brandname {
+        font-size: 1rem !important;
+    }
+    .introduction {
+        margin-top: 60px !important;
+    } 
+    .column {
+        width: 50% !important;
+    }   
+  }
+  @media only screen and (max-width: 768px) {
+    .navbar {
+        display: none !important;
+    }
+    .title {
+        font-size: 1rem !important;
+    }
+    #brandname {
+        font-size: 0.5rem !important;
+    }
+    .introduction {
+        margin-top: 50px !important;
+    }
+    .column {
+        width: 100% !important;
+    }
+  }
+
+/*BACKGROUND AND INTRO*/
+.fullscreen-bg {
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.fullscreen-bg_video {
+    width: 100vw;;
+    height:auto;
+    filter: brightness(50%);
+}
+
+.introduction {
+    text-align: right;
+    position: absolute;
+    top: 10vw;
+    left: 40vw;
+    margin-top: 100px;
+    margin-right: 57px;
+    z-index: 1000;
+}
+
+.title {
+    font-size: 3rem;
+    color: white;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'GFS Didot', serif !important;
+    
+}
+#brandname {
+    color:white;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: lighter;
+}
+hr {
+    border-style: solid;
+    padding:1px;
+    margin-bottom: 57px;
+    background-color: white;
+    border-color: white;
+}
+
+#l-btn {
+    background-color: #00553D !important;
+    color:white !important;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 15px;
+    text-align: center;
+    width: 300px;
+    height: 60px;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 6px;
+}
+
+/*ABOUT-US*/
+.square {
+    text-align: center;
+    padding:100px 150px 100px 150px;
+    margin: 0;
+    width: 100vw;
+    /*background-image: url("https://www.alingsashuspaket.se/wp-content/uploads/2019/10/ladstil_svartvit.jpg");*/
+
+
+}
+.square #about-img { 
+    width: 40%;
+    float: left;  
+    margin: 45px 25px 0px 50px; 
+    padding:20px;
+
+} 
+.square #about-info {
+    /*font-family: 'Commissioner', serif;
+    line-height: 2em;*/
+    -webkit-box-shadow: 0px 6px 80px -8px rgba(26,66,11,0.32);
+-moz-box-shadow: 0px 6px 80px -8px rgba(26,66,11,0.32);
+box-shadow: 0px 6px 80px -8px rgba(26,66,11,0.32);
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    background-color:white;
+    text-align: justify;  
+    padding: 30px 70px 30px 70px;
+
+} 
+
+#about-info h2 {
+    color: #290001;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+#about-info p {
+    color: #290001;
+}
+.bold {
+    font-weight: bold !important; 
+}
+
+
+/*FOOTER*/
+
+.footer {
+    position: relative;
+    background-color: #000005;
+}
+.footer .footer-1 {
+    padding: 5px 57px 5px 57px;
+    width: 20%;
+}
+.footer .footer-2 {
+    position: absolute;
+    bottom: 5px;
+    left: 40%;
+    padding : 15px;
+}
+.footer-1 p {
+    color:white;
+    padding: 0;
+}
+.social-icon {
+    width: 50px;
+    padding: 8px;
+}
+
+
+
+
+

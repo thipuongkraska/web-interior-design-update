@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./styles/admin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="./effects/admin.js" defer></script>
+</head>
+<body>
+        <form class="header" action="/logout" method="POST">
+            <button id="home"><a href="/">Trang chu</a></button>
+            <button id="logout"><a href="/logout">Logout</a></button>
+        </form>
+        <h1 id="title">Admin</h1>
+    <hr>
+    <div class="btn">
+        <button onclick="upload()">Viết Nội Dung</button>
+        <button onclick="blog()">Viết Blog</button>
+        <button onclick="edit()">Chỉnh Sửa</button>
+    </div>
+    
+    <div class="form upload-form">
+    <form action="/admin-upload" method="POST" enctype="multipart/form-data">
+        <label for=""><strong>Trang</strong></label><br>
+        <label for="">Đồ gỗ mỹ nghệ</label>
+        <input type="checkbox" name="dogo" value="true"><br>
+        <label for="">Nội thất</label>
+        <input type="checkbox" name="noithat" value="true"><br>
+        <label for="">Sân vườn</label>
+        <input type="checkbox" name="sanvuon" value="true"><br><br>
+
+        <label for=""><strong>Tải ảnh lên</strong></label><br>
+        <input type="file" id="fileupload" name="img" accept="image/*"><br>
+        <label><strong>Alt</strong></label><br>
+        <textarea name="alt" rows="1"></textarea><br><br>
+
+        <label for=""><strong>Tên sản phẩm</strong></label><br>
+        <textarea name="product" rows="1" ></textarea><br><br>
+        <label for=""><strong>Giá</strong></label><br>
+        <textarea name="price" rows="1" ></textarea><br><br>
+        <label for=""><strong>Chi tiết</strong></label><br>
+        <textarea name="detail" rows="8" ></textarea><br><br>
+        <input type="submit" name="" value="Post">
+    </form>
+    </div>
+    <div class="form blog-form">
+    <form action="/admin-blog" method="POST" enctype="multipart/form-data">
+        <label for=""><strong>Tiêu Đề</strong></label><br>
+        <textarea name="article" rows="1" ></textarea><br><br>
+        <label for=""><strong>Nội Dung</strong></label><br>
+        <textarea name="content" rows="20" ></textarea><br><br>
+        <label for=""><strong>Tải Ảnh Lên</strong></label>
+        <input type="file" name="img" id="" accept="image/*"><br>
+        <label><strong>Alt</strong></label><br>
+        <textarea name="alt" rows="1"></textarea><br><br>
+        <label><strong>Head title</strong></label><br>
+        <textarea name="title" rows="1"></textarea><br><br>
+        <label><strong>Meta</strong></label><br>
+        <textarea name="meta" rows="8"></textarea><br><br>
+        <input type="submit" name="" value="Post">
+    </form>
+    </div>
+
+    <div class="all-products">
+        <form action="/delete" method="POST">
+        <div class="grid">
+            <% dulieu.forEach((item) => { %>
+              <div class="row"> 
+                  <div class="column">
+                      
+                    <div class="content nature">
+                      
+                      <img id="img" src= <%= item.link %> alt= <%= item.alt %> >
+                      <h4>Tên sản phẩm:<span> <%= item.name %></span></h4>
+                      
+                        <Label>Xoa</Label>
+                        <input type="checkbox" name="tick" value="<%= item.id %>" onclick="this.form.submit()">
+                    
+                    </div>
+                    
+                  </div>
+                  
+              </div>
+              <% }) %>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        var x=document.querySelector(".upload-form");
+        var y=document.querySelector(".blog-form");
+        var z=document.querySelector(".all-products");
+        function upload() {
+            y.id="hide"; 
+            x.id="show";
+            z.id="hide";
+        }
+        function blog() {
+            x.id="hide";
+            y.id="show";
+            z.id="hide";
+        }
+        function edit() {
+            x.id="hide";
+            y.id="hide";
+            z.id="show";
+        }
+    </script>
+</body>
+</html>
